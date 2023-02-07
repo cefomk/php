@@ -3,7 +3,9 @@
 ## Sous titre 
 ### Sous sous titre
 
-Un paragraphe blah blah
+Test conflit git
+
+Un paragraphe blah git conflit
 
 Un deuxieme paragraphe blah blah 
 
@@ -34,4 +36,3 @@ Un deuxieme paragraphe blah blah
 
 [Generer un gitignore](https://www.toptal.com/developers/gitignore)
 
-Test conflit git
