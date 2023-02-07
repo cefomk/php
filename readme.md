@@ -11,6 +11,8 @@ Un paragraphe blah git conflit 2
 
 Un deuxieme paragraphe blah blah 
 
+Conflit blah blah
+
 **texte en gras**
 
 \# ce n'est pas un titre
