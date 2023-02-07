@@ -5,7 +5,9 @@
 
 Test conflit git
 
-Un paragraphe blah git conflit
+Un paragraphe blah git conflit 2
+Un paragraphe blah git conflit 2
+Un paragraphe blah git conflit 2
 
 Un deuxieme paragraphe blah blah 
 
