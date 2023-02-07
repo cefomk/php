@@ -40,16 +40,17 @@
 // Crer 2 variables prixht et tva
 // Afficher le calcul du prix ttc
 
-$prixht = 34;
-$tva= 10;
+// $prixht = 34;
+// $tva= 10;
 
-$prixttc = $prixht + ($tva * $prixht) /100;
-echo $prixttc . ' €';
+// $prixttc = $prixht + ($tva * $prixht) /100;
+// echo $prixttc . ' €';
 
 // Calculer l'âge d'une personnne en fonction 
 // de son année de naissance
 $anneeDeNaissance = 1990;
+$anneeEnCours = date("Y");
 
-
-// $age = ;
+$age = $anneeEnCours - $anneeDeNaissance;
+echo $age . ' ans.';
 
