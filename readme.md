@@ -33,3 +33,5 @@ Un deuxieme paragraphe blah blah
 [Documentation , manuel PHP](https://www.php.net/manual/fr/)
 
 [Generer un gitignore](https://www.toptal.com/developers/gitignore)
+
+Test conflit git
