@@ -60,7 +60,7 @@ Un deuxieme paragraphe blah blah
 
 [Documentation , manuel PHP](https://www.php.net/manual/fr/)
 
-[PHPchez w3school](https://www.w3schools.com/php/default.asp)
+[PHP chez w3school](https://www.w3schools.com/php/default.asp)
 
 ---
 
