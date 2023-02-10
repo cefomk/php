@@ -1,7 +1,11 @@
 <?php
 include './partials/header.php';
+include './include/fonctions.php';
 // include_once './partials/header.php';
 // require './partials/header.php';
+
+dd($_SERVER);
+
 ?>
 <header>
     <?php $titre = 'Cours PHP'; ?>
