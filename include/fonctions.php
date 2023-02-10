@@ -17,9 +17,22 @@
 // echo calcul(23);
 
 // Faire une fonction qui calul le Prix TTC en lui passant le prix HT et la TVA
+function calculPrixTTC($prixht,$tva)
+{
+    $prixTTC = $prixht + ($prixht * $tva) / 100;
+    return $prixTTC;
+}
+
+// echo calculPrixTTC(34,10);
 
 // Faire une fonction qui calcul l'âge d'une personne en donnant la date de naissance à la fonction
 
+function calculAge($anneNaissance)
+{
+    $anneeEnCours = date("Y");
+    $age = $anneeEnCours - $anneNaissance;
+    return $age;
+}
 
 function dbug($valeur)
 {
