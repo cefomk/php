@@ -110,6 +110,6 @@ function dd($valeur)
 // echo calcul(5);
 // dd($y);
 
-global $z; 
-$z = 'le monde';
-echo 'Hello ' . $GLOBALS['z'];
+// global $z; 
+// $z = 'le monde';
+// echo 'Hello ' . $GLOBALS['z'];
