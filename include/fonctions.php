@@ -79,7 +79,7 @@ function dd($valeur)
 
 // dd(maFonction(34));
 
-$article = "Je suis un article.";
+// $article = "Je suis un article.";
 // Inverser une chaine de cacaretere
 //dd(strrev($article));
 
@@ -95,5 +95,21 @@ $article = "Je suis un article.";
 
 // Retourne un segment d'une chaine de caractere
 // renvoyer les 6 premieres elements
-dd(substr($article,0,6));
+//dd(substr($article,0,6));
 
+// $x = 5;
+// $y = 3;
+
+// function calcul($x)
+// {
+//     global $y;
+//     $y = 7;
+//     return $x + $y;
+// }
+
+// echo calcul(5);
+// dd($y);
+
+global $z; 
+$z = 'le monde';
+echo 'Hello ' . $GLOBALS['z'];
