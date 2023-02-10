@@ -81,19 +81,19 @@ function dd($valeur)
 
 $article = "Je suis un article.";
 // Inverser une chaine de cacaretere
-
+//dd(strrev($article));
 
 // Longueur d'une chaine de caracete
-
+// dd(strlen($article));
 
 // Transforme une chaine de caratere en majuscule
-
+// dd(strtoupper($article));
 
 // Remplace un element dans une chaine de caractere
 // remplacer 'un' par 'cet'
-
+// dd(str_replace('un','cet',$article));
 
 // Retourne un segment d'une chaine de caractere
-// renvoyer les 6 premieres elements d'une chaine de carateres
-
+// renvoyer les 6 premieres elements
+dd(substr($article,0,6));
 
