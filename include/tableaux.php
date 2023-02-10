@@ -35,11 +35,40 @@ include './fonctions.php';
 
 $tableau = [true,4,6.7,[5,'truc',['muche',8,8.9]]];
 $notes = [12,9,13,7,2];
-dd($notes);
+// dd($notes);
 
 $tableauFusion = array_merge($tableau,$notes);
-dd($tableauFusion);
+// dd($tableauFusion);
 
 // Afficher la note 13 dans le tableau notes
+// dd($notes[2]);
+
 // Afficher la note 13 dans le tableau tableauFusion
-dd($notes[2]);
+// dd($tableauFusion[6]);
+
+// Afficher le chiffre 5 dans le tableau tableauFusion
+// dd($tableauFusion[3][0]);
+
+// Afficher le chiffre 8.9 dans le tableau tableauFusion
+// dd($tableauFusion[3][2][2]);
+
+// Tableau associatif
+
+// $fruits = [
+//     'banane' => 'jaune',
+//     'pomme' => 'rouge',
+//     'kiwi' => 'vert'
+// ];
+
+// Afficher la couleur de kiwi
+// dd($fruits['kiwi']);
+
+// $fruits['poire'] = 'rouge';
+// // dd($fruits);
+
+// $chaine = implode('*',$fruits);
+// // dd($chaine);
+// $fruits2 = explode('*',$chaine);
+// dd($fruits2);
+
+// Fonction associes aux tableau 

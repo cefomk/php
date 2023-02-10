@@ -43,8 +43,9 @@ function dbug($valeur)
 
 function dd($valeur)
 {
-    echo "<pre style='background-color:black;color:white;padding: 15px;overflow: auto;height: 300px;'>";
+    echo "<pre style='background-color:black;color:white;padding: 15px;overflow: auto;height: 500px;'>";
     var_dump($valeur);
+    // print_r($valeur);
     echo "</pre>";
     die();
 }
