@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 // function calcul($a,$b)
 // {
 //     $c = $a + $b;
@@ -23,8 +25,6 @@ function calculPrixTTC($prixht,$tva)
     return $prixTTC;
 }
 
-// echo calculPrixTTC(34,10);
-
 // Faire une fonction qui calcul l'âge d'une personne en donnant la date de naissance à la fonction
 
 function calculAge($anneNaissance)
@@ -43,8 +43,57 @@ function dbug($valeur)
 
 function dd($valeur)
 {
-    echo "<pre style='background-color:black;color;white;padding: 10ppx;'>";
+    echo "<pre style='background-color:black;color:white;padding: 15px;overflow: auto;height: 300px;'>";
     var_dump($valeur);
     echo "</pre>";
     die();
 }
+
+// function maFonction(): int
+// {
+//     return '3';
+// }
+
+// dd(maFonction());
+
+// function maFonction(): void
+// {
+//     return ;
+//     // return null;
+// }
+
+// dd(maFonction());
+
+// function maFonction(): array|int|float
+// function maFonction(): mixed
+// {
+//     return [4.5];
+// }
+
+// dd(maFonction());
+
+// function maFonction(array|int $x): mixed
+// {
+//     return $x;
+// }
+
+// dd(maFonction(34));
+
+$article = "Je suis un article.";
+// Inverser une chaine de cacaretere
+
+
+// Longueur d'une chaine de caracete
+
+
+// Transforme une chaine de caratere en majuscule
+
+
+// Remplace un element dans une chaine de caractere
+// remplacer 'un' par 'cet'
+
+
+// Retourne un segment d'une chaine de caractere
+// renvoyer les 6 premieres elements d'une chaine de carateres
+
+
