@@ -1,7 +1,5 @@
 <?php
-include '../partials/header.php';
-include './fonctions.php';
-
+include '../include/fonctions.php';
 // Tableau indexé
 // declaration d'un tableau
 
@@ -107,7 +105,7 @@ $person1 = [
 ];
 
 $people = [
-    $person1 ,
+    $person1,
     [
         'nom' => 'Mourad',
         'prenom' => 'Michel',
@@ -118,31 +116,65 @@ $people = [
         'prenom' => 'Lucie',
         'email' => 'ludu@gmail.com'
     ],
-    ];
-// dd($people);
+];
 
-// Afficher les phrase suivantes :
-// Le nom de Lucie est  Dupond.
-// L'email de Michel MOURAD est moumi@caramail.com
+
+// // Afficher les phrase suivantes :
+// // Le nom de Lucie est  Dupond.
+// echo 'Le nom de ' . $people[2]['prenom'] . 'est ' . $people[2]['nom'] .'.</br>';
+// // L'email de Michel MOURAD est moumi@caramail.com
+// echo 'L\'email de ' . $people[1]['prenom'] . ' ' . strtoupper($people[1]['nom']) . ' est ' . $people[1]['email'] . '.</br>';
 // Afficher les personnes dans un tableau html nom/prenom/email
 ?>
-<table class="montableau">
+<!-- <table class="montableau">
     <thead>
     <tr>
-        <th>Truc</th>
-        <th>Muche</th>
-        <th>Blah</th>
+        <th>Prenom</th>
+        <th>Nom</th>
+        <th>Email</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>Un dfsdfsdfsd</td>
-        <td>Deux dsfsdfsdfsdf</td>
-        <td>Trois dfsdfsdfsdfsdffsd</td>
-    </tr>
+    <?php  //foreach ($people as $key => $val) { 
+    ?>
+        <tr>
+            <td><? //=$val['prenom']
+                ?></td>
+            <td><? //=$val['nom']
+                ?></td>
+            <td><? //=$val['email']
+                ?></td>
+        </tr>
+    <?php //} 
+    ?>
     </tbody>
-</table>
+</table> -->
 
 <?php
-include '../partials/footer.php';
+
+// $jsonFile = json_encode($people);
+// dd($jsonFile);
+
+$jsonObj = '{
+   "nom": "Pontpasneuf",
+   "prenom": "Albert",
+   "email": "pontal@free.fr",
+   "couleur": ["rouge","vert","jaune"],
+   "image": "https://ximg.es/128x128/000/fff" 
+}';
+
+$jsonArrayPhp = json_decode($jsonObj,true);
+// dbug($jsonArrayPhp);
+
+// Afficher une card pour cette personne
 ?>
+
+<figure>
+    <img src="<?=$jsonArrayPhp['image']?>" alt="">
+    <figcaption>
+        <ul>
+            <li><?=$jsonArrayPhp['prenom']?> <?=$jsonArrayPhp['nom']?></li>
+            <li><?=$jsonArrayPhp['email']?></li>
+        </ul>
+    </figcaption>
+</figure>
