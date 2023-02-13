@@ -82,6 +82,7 @@ function dd($valeur)
 
 // $article = "Je suis un article.";
 // Inverser une chaine de cacaretere
+//echo $article;
 //dd(strrev($article));
 
 // Longueur d'une chaine de caracete
