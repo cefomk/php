@@ -36,7 +36,7 @@ function calculAge($anneNaissance)
 
 function dbug($valeur)
 {
-    echo "<pre>";
+    echo "<pre style='background-color:black;color:white;padding: 15px;overflow: auto;'>";
     var_dump($valeur);
     echo "</pre>";
 }
