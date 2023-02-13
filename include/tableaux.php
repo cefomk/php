@@ -1,4 +1,5 @@
 <?php
+include '../partials/header.php';
 include './fonctions.php';
 
 // Tableau indexé
@@ -118,9 +119,30 @@ $people = [
         'email' => 'ludu@gmail.com'
     ],
     ];
-dd($people);
+// dd($people);
 
 // Afficher les phrase suivantes :
 // Le nom de Lucie est  Dupond.
 // L'email de Michel MOURAD est moumi@caramail.com
 // Afficher les personnes dans un tableau html nom/prenom/email
+?>
+<table class="montableau">
+    <thead>
+    <tr>
+        <th>Truc</th>
+        <th>Muche</th>
+        <th>Blah</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Un dfsdfsdfsd</td>
+        <td>Deux dsfsdfsdfsdf</td>
+        <td>Trois dfsdfsdfsdfsdffsd</td>
+    </tr>
+    </tbody>
+</table>
+
+<?php
+include '../partials/footer.php';
+?>
