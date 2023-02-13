@@ -43,8 +43,9 @@ function dbug($valeur)
 
 function dd($valeur)
 {
-    echo "<pre style='background-color:black;color:white;padding: 15px;overflow: auto;height: 300px;'>";
+    echo "<pre style='background-color:black;color:white;padding: 15px;overflow: auto;height: 500px;'>";
     var_dump($valeur);
+    // print_r($valeur);
     echo "</pre>";
     die();
 }
@@ -79,21 +80,38 @@ function dd($valeur)
 
 // dd(maFonction(34));
 
-$article = "Je suis un article.";
+// $article = "Je suis un article.";
 // Inverser une chaine de cacaretere
-echo $article;
+//echo $article;
+//dd(strrev($article));
 
 // Longueur d'une chaine de caracete
-
+// dd(strlen($article));
 
 // Transforme une chaine de caratere en majuscule
-
+// dd(strtoupper($article));
 
 // Remplace un element dans une chaine de caractere
 // remplacer 'un' par 'cet'
-
+// dd(str_replace('un','cet',$article));
 
 // Retourne un segment d'une chaine de caractere
-// renvoyer les 6 premieres elements d'une chaine de carateres
+// renvoyer les 6 premieres elements
+//dd(substr($article,0,6));
 
+// $x = 5;
+// $y = 3;
 
+// function calcul($x)
+// {
+//     global $y;
+//     $y = 7;
+//     return $x + $y;
+// }
+
+// echo calcul(5);
+// dd($y);
+
+// global $z; 
+// $z = 'le monde';
+// echo 'Hello ' . $GLOBALS['z'];
