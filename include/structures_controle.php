@@ -71,10 +71,29 @@ include './fonctions.php';
 //     echo 'Faux';
 // }
 
-$votes = 235;
-$votesPrecedent = 1226;
-($votes > $votesPrecedent) ? $votes-- : $votes++;
+// $votes = 235;
+// $votesPrecedent = 1226;
+// ($votes > $votesPrecedent) ? $votes-- : $votes++;
 
-dd($votes);
+// dd($votes);
 
 // switch/case
+// https://www.php.net/manual/fr/control-structures.switch.php
+
+$couleur = 'red';
+switch ($couleur) {
+    case 'red':
+        echo 'Votre couleur favorite est le rouge.';
+        break;
+    case 'blue':
+        echo 'Votre couleur favorite est le bleu.';
+        break;
+    case 'green':
+        echo 'Votre couleur favorite est le vert.';
+        break;
+    default:
+        echo 'Votre couleur favorite est ni le rouge,ni le bleu, ni le vert';
+}
+
+// match
+
