@@ -1,2 +1,2 @@
 <?php
-// A l'aide d'une boucle foreach clef/valeur , à laide du fichier colors.json , essayer d'obtenir le resultat comme sur la cpature d'ecran : resultat-travaux-03.png
+// A l'aide d'une boucle foreach clef/valeur , parcourir le fichier colors.json , afin  d'obtenir le resultat de la capature d'ecran : resultat-travaux-03.png
