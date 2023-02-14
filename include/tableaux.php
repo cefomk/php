@@ -181,6 +181,7 @@ include '../include/fonctions.php';
 <?php
 $jsonQuiz = file_get_contents('../data/quiz.json');
 $jsonQuizArrayPhp = json_decode($jsonQuiz,true);
-dd($jsonQuiz);
+// dd($jsonQuizArrayPhp);
 
 // Afficher la question 1 de maths 
+echo 'Question 1 de maths : ' . $jsonQuizArrayPhp['quiz']['maths']['q1']['question'];
