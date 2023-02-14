@@ -180,6 +180,7 @@ include '../include/fonctions.php';
 </figure> -->
 <?php
 $jsonQuiz = file_get_contents('../data/quiz.json');
+$jsonQuizArrayPhp = json_decode($jsonQuiz,true);
 // dd($jsonQuiz);
 
 // Afficher la question 1 de maths 
