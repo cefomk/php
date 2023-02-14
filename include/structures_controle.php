@@ -1,4 +1,5 @@
 <?php
+include './fonctions.php';
 /* if/else/elseif
 
 >
@@ -36,8 +37,8 @@
 //     echo 'On est l\'apres midi.';
 // }
 
-$a = '20';
-$b = 5;
+// $a = '20';
+// $b = 5;
 
 // if($b != 3) {
 //     echo 'La variable $b n\' est pas egale à 3.';
@@ -69,5 +70,11 @@ $b = 5;
 // } else {
 //     echo 'Faux';
 // }
+
+$votes = 235;
+$votesPrecedent = 1226;
+($votes > $votesPrecedent) ? $votes-- : $votes++;
+
+dd($votes);
 
 // switch/case
