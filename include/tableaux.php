@@ -98,25 +98,25 @@ include '../include/fonctions.php';
 // // dd($tab);
 // echo $tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2];
 
-$person1 = [
-    'nom' => 'Carle',
-    'prenom' =>  'Awa',
-    'email' => 'cawa@yahoo.com'
-];
+// $person1 = [
+//     'nom' => 'Carle',
+//     'prenom' =>  'Awa',
+//     'email' => 'cawa@yahoo.com'
+// ];
 
-$people = [
-    $person1,
-    [
-        'nom' => 'Mourad',
-        'prenom' => 'Michel',
-        'email' => 'moumi@caramail.com'
-    ],
-    [
-        'nom' => 'Dupond',
-        'prenom' => 'Lucie',
-        'email' => 'ludu@gmail.com'
-    ],
-];
+// $people = [
+//     $person1,
+//     [
+//         'nom' => 'Mourad',
+//         'prenom' => 'Michel',
+//         'email' => 'moumi@caramail.com'
+//     ],
+//     [
+//         'nom' => 'Dupond',
+//         'prenom' => 'Lucie',
+//         'email' => 'ludu@gmail.com'
+//     ],
+// ];
 
 
 // // Afficher les phrase suivantes :
@@ -155,26 +155,31 @@ $people = [
 // $jsonFile = json_encode($people);
 // dd($jsonFile);
 
-$jsonObj = '{
-   "nom": "Pontpasneuf",
-   "prenom": "Albert",
-   "email": "pontal@free.fr",
-   "couleur": ["rouge","vert","jaune"],
-   "image": "https://ximg.es/128x128/000/fff" 
-}';
+// $jsonObj = '{
+//    "nom": "Pontpasneuf",
+//    "prenom": "Albert",
+//    "email": "pontal@free.fr",
+//    "couleur": ["rouge","vert","jaune"],
+//    "image": "https://ximg.es/128x128/000/fff" 
+// }';
 
-$jsonArrayPhp = json_decode($jsonObj,true);
+// $jsonArrayPhp = json_decode($jsonObj,true);
 // dbug($jsonArrayPhp);
 
 // Afficher une card pour cette personne
 ?>
 
-<figure>
-    <img src="<?=$jsonArrayPhp['image']?>" alt="">
+<!-- <figure>
+    <img src="<?//=$jsonArrayPhp['image']?>" alt="">
     <figcaption>
         <ul>
-            <li><?=$jsonArrayPhp['prenom']?> <?=$jsonArrayPhp['nom']?></li>
-            <li><?=$jsonArrayPhp['email']?></li>
+            <li><?//=$jsonArrayPhp['prenom']?> <?//=$jsonArrayPhp['nom']?></li>
+            <li><?//=$jsonArrayPhp['email']?></li>
         </ul>
     </figcaption>
-</figure>
+</figure> -->
+<?php
+$jsonQuiz = file_get_contents('../data/quiz.json');
+// dd($jsonQuiz);
+
+// Afficher la question 1 de maths 
