@@ -80,20 +80,28 @@ include './fonctions.php';
 // switch/case
 // https://www.php.net/manual/fr/control-structures.switch.php
 
-$couleur = 'red';
-switch ($couleur) {
-    case 'red':
-        echo 'Votre couleur favorite est le rouge.';
-        break;
-    case 'blue':
-        echo 'Votre couleur favorite est le bleu.';
-        break;
-    case 'green':
-        echo 'Votre couleur favorite est le vert.';
-        break;
-    default:
-        echo 'Votre couleur favorite est ni le rouge,ni le bleu, ni le vert';
-}
+// $couleur = 'red';
+// switch ($couleur) {
+//     case 'red':
+//         echo 'Votre couleur favorite est le rouge.';
+//         break;
+//     case 'blue':
+//         echo 'Votre couleur favorite est le bleu.';
+//         break;
+//     case 'green':
+//         echo 'Votre couleur favorite est le vert.';
+//         break;
+//     default:
+//         echo 'Votre couleur favorite est ni le rouge,ni le bleu, ni le vert';
+// }
 
 // match
+$couleur = 'green';
 
+$return_value = match ($couleur) {
+    'red' => 'Votre couleur favorite est le rouge.',
+    'blue' => 'Votre couleur favorite est le bleu.',
+    'green' => 'Votre couleur favorite est le vert.',
+};
+
+dd($return_value);
