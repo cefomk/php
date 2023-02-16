@@ -1,5 +1,5 @@
 <?php
-
+include './include/fonctions.php';
 // un commentaire
 # un commentaire
 /*
@@ -14,6 +14,12 @@ $Variable = 'Une Variable';
 
 //echo "$variable, $Variable";
 //echo '$variable , $Variable';
+
+//$x = (string) '5';
+//$x = (int) '5';
+//$x = (float) '5';
+//$x = (bool) '5';
+//dd($x);
 
 /*
 $camelCase = 'une variable en camel case';
@@ -80,7 +86,7 @@ echo $html;
 
 <?php
 
-$tableau = ['groupe',23,4.5,false,[1,2,3]];
+$tableau = ['groupe', 23, 4.5, false, [1, 2, 3]];
 // echo '<pre>';
 // var_dump($tableau);
 // print_r($tableau);
@@ -94,22 +100,12 @@ $tableau = ['groupe',23,4.5,false,[1,2,3]];
 // echo '</pre>';
 
 // Constantes
-define('HOST','localhost');
-define('USER','Jon doe');
-define('TABLEAU',['a',45,true,1.8]);
+define('HOST', 'localhost');
+define('USER', 'Jon doe');
+define('TABLEAU', ['a', 45, true, 1.8]);
 
 //echo HOST;
 //echo USER;
 print_r(TABLEAU);
 echo '<hr>';
 var_dump(TABLEAU);
-
-
-
-
-
-
-
-
-
-

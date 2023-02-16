@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 // function calcul($a,$b)
@@ -19,7 +20,8 @@ declare(strict_types=1);
 // echo calcul(23);
 
 // Faire une fonction qui calul le Prix TTC en lui passant le prix HT et la TVA
-function calculPrixTTC($prixht,$tva)
+
+function calculPrixTTC($prixht, $tva)
 {
     $prixTTC = $prixht + ($prixht * $tva) / 100;
     return $prixTTC;
@@ -115,3 +117,12 @@ function dd($valeur)
 // global $z; 
 // $z = 'le monde';
 // echo 'Hello ' . $GLOBALS['z'];
+
+
+if (true) {
+    function maFonction()
+    {
+        return 'coucou';
+    }
+}
+//var_dump(maFonction());
