@@ -21,6 +21,15 @@ $Variable = 'Une Variable';
 //$x = (bool) '5';
 //dd($x);
 
+// https://www.php.net/manual/fr/language.types.null.php
+$x = null;
+
+//dd((string) $x);
+//dd((int) $x);
+//dd((bool) $x);
+dd((array) $x);
+
+
 /*
 $camelCase = 'une variable en camel case';
 $snake_case = 'une variable en snake case';
