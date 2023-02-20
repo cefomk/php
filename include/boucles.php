@@ -47,11 +47,107 @@ include './fonctions.php';
 // }
 
 // For
-for ($i = 0; $i < 8; $i++) {
-	if ($i === 3) {
-		continue;
-	}
-	echo $i;
-}
+// for ($i = 0; $i < 8; $i++) {
+// 	if ($i === 3) {
+// 		continue;
+// 	}
+// 	echo $i;
+// }
 
-//$tab = [1,2,3,4,5,6];
+$planetes = ['mars','uranus','jupiter','terre','saturne'];
+
+// foreach($planetes as $planete)
+// {
+// 	echo $planete . '<br />';
+// }
+
+// foreach($planetes as $clef => $planete)
+// {
+// 	echo $clef . ': ' . $planete . '<br />';
+// }
+
+// foreach($planetes as $clef => &$planete)
+// {
+// 	echo $clef . ': ' . $planete . '<br />';
+// }
+// $planete = 'beta';
+// dd($planetes);
+
+$users = [
+	'nom' => 'Doupet',
+	'email' => 'ldoupet@yahoo.com',
+	'competences' => ['php','react','python']
+];
+
+// foreach($users as $key => $val)
+// {
+// 	// echo $key . ': ' . $val . '<br>';
+// 	echo $key . ': ' . json_encode($val) . '<br>';
+// }
+
+// foreach ($users as $key => $val) {
+// 	if ($key === 'competences') {
+// 	  //dbug($user['competences']);
+// 	  echo 'competences : ';
+// 	  foreach ($users['competences'] as $comp) {
+// 		echo $comp . ', ';
+// 	  }
+// 	} else {
+// 	  echo $key . ' : ' . $val . '<br>';
+// 	}
+//   }
+
+// foreach($users as $key => $val)
+// {
+//      if($key == 'competences' && is_array($val)){
+        
+//         echo $key . ': ';
+//         foreach($val as $competences){
+//             echo $competences . ', ';
+//         }
+//     }else{
+//         echo $key . ': ' . $val . '<br>';
+//     }
+// }
+
+// foreach($users as $key => $val)
+// {
+// 	if(is_array($val))
+// 	{
+// 		$val = implode(',', $val);
+// 	}
+// 	echo $key . ': ' . json_encode($val) . '<br>';
+// }
+
+// foreach($users as $key => $val)
+// {
+// 	echo $key . ': ' ;
+// 	if (is_array($val))
+// 	{
+// 		foreach($val as $competence)
+// 		{
+// 			echo $competence . ',';
+// 		}
+// 	} else {
+// 		echo $val;
+// 	}
+// 	echo '<br>';
+// }
+
+
+foreach($users as $key => $val):
+	echo $key . ': ' ;
+	if (is_array($val)):
+		foreach($val as $competence):
+			echo $competence . ',';
+		endforeach;
+	else:
+		echo $val;
+	endif;
+	echo '<br>';
+endforeach;
+
+
+// foreach($planetes as $key => $val):
+// 	echo $key . ': ' . $val . '<br>';
+// endforeach;

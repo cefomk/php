@@ -1,4 +1,8 @@
 <?php
+// session_start();
+// $_SESSION['visite'] = ($_SESSION['visite'] ?? 0) + 1;
+
+
 include './partials/header.php';
 include './include/fonctions.php';
 // include_once './partials/header.php';

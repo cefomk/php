@@ -10,7 +10,7 @@ $jsonRandomUserArray = json_decode($jsonRandomUser, true);
 	text-decoration: underline;
 }
 </style>
-<div class="robot">
+<div>
 
 	<?php
 	foreach ($jsonRandomUserArray['results'] as $key => $val) {
@@ -29,5 +29,4 @@ $jsonRandomUserArray = json_decode($jsonRandomUser, true);
 	<?php
 	}
 	?>
-	
 </div>
