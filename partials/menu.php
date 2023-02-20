@@ -6,4 +6,5 @@
     <li><a href="./include/structures_controle.php">Structures de controle</a></li>
     <li><a href="./include/boucles.php">Boucles</a></li>
     <li><a href="./include/session.php">Session / Cookie</a></li>
+    <li><a href="./formulaire/">Formulaire</a></li>
 </ul>
