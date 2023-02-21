@@ -1,8 +1,9 @@
 <?php
+
 declare(strict_types=1);
 
 error_reporting(E_ALL);
-ini_set('display_errors','1');
+ini_set('display_errors', '1');
 
 // function calcul($a,$b)
 // {
@@ -128,3 +129,19 @@ function dd($valeur)
 //     }
 // }
 //var_dump(maFonction());
+
+function cleanData($valeur)
+{
+    if (!empty($valeur) && isset($valeur)) :
+        $valeur = htmlentities(trim($valeur));
+        return $valeur;
+    else :
+        return false;
+    endif;
+}
+
+function textData($valeur)
+{
+    $valeur = preg_match('/^[a-z-A-Z]*$/', $valeur);
+    return $valeur;
+}

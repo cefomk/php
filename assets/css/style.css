@@ -10,3 +10,7 @@ a {
 .montableau td {
     border:solid 10px red;
 }
+
+.form div {
+    display: flex;
+}
