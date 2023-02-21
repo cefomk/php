@@ -1,6 +1,5 @@
 <?php
-// include '../include/fonctions.php';
-// dbug($_POST);
+include './traitement.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,31 +14,34 @@
 
 <body>
     <h1>Formulaire</h1>
-    <!-- <form action="" method="POST"> -->
-    <form action="traitement.php" method="POST" class="form">
+    <?php
+
+    ?>
+    <form action="" method="POST">
+        <!-- <form action="traitement.php" method="POST" class="form"> -->
         <div>
             <label for="nom">Nom *:</label>
             <input type="text" name="nom" id="nom" required>
         </div>
         <div>
             <label for="email">Email *:</label>
-                <input type="text" name="email" id="email" required>
-            </div>
-            <div>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div>
             <label for="titre">Titre *:</label>
             <input type="text" name="titre" id="titre" required>
         </div>
         <div>
-        <label for="cmmentaire">Commentaire *:</label>
-        <textarea name="commentaire" id="commentaire" cols="30" rows="10" required></textarea>
+            <label for="cmmentaire">Commentaire *:</label>
+            <textarea name="commentaire" id="commentaire" cols="30" rows="10" required></textarea>
         </div>
         <div>
-            Compétence: 
+            Compétence:
             <input type="checkbox" name="competence[]" value="php" id="php">PHP
-            <input type="checkbox" name="competence[]"  value="html" id="html">HTML
-            <input type="checkbox" name="competence[]"  value="css" id="css">CSS
-            <input type="checkbox" name="competence[]"  value="pyhton" id="pyhton">Python
-            <input type="checkbox" name="competence[]"  value="react" id="react">React
+            <input type="checkbox" name="competence[]" value="html" id="html">HTML
+            <input type="checkbox" name="competence[]" value="css" id="css">CSS
+            <input type="checkbox" name="competence[]" value="pyhton" id="pyhton">Python
+            <input type="checkbox" name="competence[]" value="react" id="react">React
         </div>
         <div>
             Niveau :
@@ -51,7 +53,9 @@
             <input type="submit" value="Envoyer" name="submitted">
             <!-- <button type="submit">Valider</button> -->
         </div>
-        <div><p>* Champs obligatoires</p></div>
+        <div>
+            <p>* Champs obligatoires</p>
+        </div>
     </form>
 </body>
 

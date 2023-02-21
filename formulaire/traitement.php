@@ -11,6 +11,7 @@ include '../include/fonctions.php';
 
 // echo 'Les competences sont : ' . implode('-',$_POST['competence']);
 
+
 // header('Location: http://localhost/php');
 // header('Location: /');
 
@@ -44,9 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['submitted'])) :
     // if (!empty($_POST['commentaire'])) :
     //     $commentaire = $_POST['commentaire'];
     // endif;
-
+    
+    dd($erreurs);
+    
     echo '<ul>';
-
     if (count($erreurs) > 0) :
         foreach ($erreurs as $erreur) {
             echo '<li>' . $erreur .  '</li>';
